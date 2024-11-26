@@ -36,3 +36,4 @@ The project is organized into multiple packages and includes the following main 
 - **Ink Consumption Calculation**: Each image determines ink consumption based on the total area and color components.  
 - **Ink Level Management**: An exception is raised if the ink level is insufficient for printing.  
 - **Color Management**: Full support for RGB colors with validation and comparison.
+- **Packaging**: All files are organized in different packages.
