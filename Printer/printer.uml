@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>unipv.poisw.printer</OriginalElement>
+  <nodes>
+    <node x="-148.0" y="706.5">unipv.poisw.printer.Main</node>
+    <node x="304.0" y="526.5">unipv.poisw.printer.imageModel.VectorImage</node>
+    <node x="668.0" y="526.5">unipv.poisw.printer.imageModel.shapes.Circle</node>
+    <node x="-161.5" y="346.5">unipv.poisw.printer.exeptions.CartridgeEmptyException</node>
+    <node x="-66.5" y="526.5">unipv.poisw.printer.inkJetPrinter.JetPrinter</node>
+    <node x="493.5" y="526.5">unipv.poisw.printer.imageModel.shapes.Rectangle</node>
+    <node x="583.5" y="466.5">unipv.poisw.printer.imageModel.shapes.Square</node>
+    <node x="297.0" y="346.5">unipv.poisw.printer.imageModel.Printable</node>
+    <node x="574.0" y="166.5">unipv.poisw.printer.colorModel.ColorRGB</node>
+    <node x="65.0" y="286.5">unipv.poisw.printer.inkJetPrinter.InkCartridge</node>
+    <node x="374.0" y="286.5">unipv.poisw.printer.exeptions.ShapesOutOfLimitExeption</node>
+    <node x="104.5" y="526.5">unipv.poisw.printer.imageModel.RasterImage</node>
+    <node x="654.0" y="106.5">unipv.poisw.printer.imageModel.shapes.Misurable</node>
+    <node x="666.5" y="346.5">unipv.poisw.printer.imageModel.shapes.Shape</node>
+    <node x="537.5" y="-13.5">unipv.poisw.printer.exeptions.IllegalColorExeption</node>
+    <node x="-90.5" y="646.5">unipv.poisw.printer.colorModel.Color</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="unipv.poisw.printer.imageModel.RasterImage" target="unipv.poisw.printer.colorModel.ColorRGB" relationship="CREATE">
+      <point x="-46.33333333333333" y="-13.5" />
+      <point x="127.66666666666669" y="440.0" />
+      <point x="234.0" y="440.0" />
+      <point x="234.0" y="140.0" />
+      <point x="634.0" y="140.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.shapes.Shape" target="unipv.poisw.printer.imageModel.shapes.Misurable" relationship="REALIZATION">
+      <point x="23.75" y="-13.5" />
+      <point x="737.75" y="320.0" />
+      <point x="714.0" y="320.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.imageModel.shapes.Circle" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="714.0" y="580.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.imageModel.RasterImage" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="274.0" y="580.0" />
+      <point x="274.0" y="500.0" />
+      <point x="127.66666666666669" y="500.0" />
+      <point x="-46.33333333333333" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.shapes.Circle" target="unipv.poisw.printer.imageModel.shapes.Shape" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.inkJetPrinter.JetPrinter" target="unipv.poisw.printer.inkJetPrinter.InkCartridge" relationship="TO_ONE">
+      <point x="30.25" y="-13.5" />
+      <point x="24.25" y="420.0" />
+      <point x="168.5" y="420.0" />
+      <point x="34.5" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.shapes.Shape" target="unipv.poisw.printer.colorModel.ColorRGB" relationship="TO_ONE">
+      <point x="-23.75" y="-13.5" />
+      <point x="690.25" y="260.0" />
+      <point x="634.0" y="260.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.shapes.Square" target="unipv.poisw.printer.imageModel.shapes.Shape" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="634.0" y="440.0" />
+      <point x="714.0" y="440.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.VectorImage" target="unipv.poisw.printer.imageModel.Printable" relationship="REALIZATION">
+      <point x="-46.66666666666667" y="-13.5" />
+      <point x="327.33333333333337" y="480.0" />
+      <point x="334.0" y="480.0" />
+      <point x="334.0" y="400.0" />
+      <point x="354.0" y="400.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.colorModel.ColorRGB" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="-186.0" y="580.0" />
+      <point x="-186.0" y="260.0" />
+      <point x="234.0" y="260.0" />
+      <point x="234.0" y="140.0" />
+      <point x="634.0" y="140.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.VectorImage" target="unipv.poisw.printer.imageModel.shapes.Shape" relationship="TO_MANY">
+      <point x="46.66666666666667" y="-13.5" />
+      <point x="420.66666666666663" y="420.0" />
+      <point x="634.0" y="420.0" />
+      <point x="634.0" y="320.0" />
+      <point x="690.25" y="320.0" />
+      <point x="-23.75" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.inkJetPrinter.JetPrinter" target="unipv.poisw.printer.inkJetPrinter.InkCartridge" relationship="CREATE">
+      <point x="-30.25" y="-13.5" />
+      <point x="-36.25" y="500.0" />
+      <point x="-46.0" y="500.0" />
+      <point x="-46.0" y="400.0" />
+      <point x="99.5" y="400.0" />
+      <point x="-34.5" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.inkJetPrinter.JetPrinter" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="74.0" y="580.0" />
+      <point x="74.0" y="480.0" />
+      <point x="-36.25" y="480.0" />
+      <point x="-30.25" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.VectorImage" target="unipv.poisw.printer.exeptions.ShapesOutOfLimitExeption" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="374.0" y="400.0" />
+      <point x="494.0" y="400.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.imageModel.VectorImage" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="474.0" y="580.0" />
+      <point x="474.0" y="500.0" />
+      <point x="374.0" y="500.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.inkJetPrinter.JetPrinter" target="unipv.poisw.printer.exeptions.CartridgeEmptyException" relationship="CREATE">
+      <point x="-30.25" y="-13.5" />
+      <point x="-36.25" y="500.0" />
+      <point x="-46.0" y="500.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.imageModel.shapes.Square" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="634.0" y="580.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.colorModel.ColorRGB" target="unipv.poisw.printer.exeptions.IllegalColorExeption" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.Main" target="unipv.poisw.printer.imageModel.shapes.Rectangle" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="-106.0" y="580.0" />
+      <point x="554.0" y="580.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.shapes.Rectangle" target="unipv.poisw.printer.imageModel.shapes.Shape" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="554.0" y="440.0" />
+      <point x="714.0" y="440.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.RasterImage" target="unipv.poisw.printer.imageModel.Printable" relationship="REALIZATION">
+      <point x="46.33333333333333" y="-13.5" />
+      <point x="220.33333333333331" y="480.0" />
+      <point x="334.0" y="480.0" />
+      <point x="334.0" y="400.0" />
+      <point x="354.0" y="400.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="unipv.poisw.printer.imageModel.RasterImage" target="unipv.poisw.printer.colorModel.ColorRGB" relationship="TO_MANY">
+      <point x="0.0" y="-13.5" />
+      <point x="174.0" y="460.0" />
+      <point x="274.0" y="460.0" />
+      <point x="274.0" y="260.0" />
+      <point x="634.0" y="260.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7122395833333334" showDependencies="true" x="329.27239488117004" y="403.69652650822667" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
